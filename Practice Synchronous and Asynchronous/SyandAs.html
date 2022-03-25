@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syncronous and Asyncronous</title>
+</head>
+<body>
+    <script>
+        // Normal Style
+        function first() {
+          console.log("1");
+        }
+        // Arrow style
+        // if two parameters we put in {}
+        let first = () => {console.log('1');}
+        // if one parameter we put in ()
+        let first = () => (console.log('1'));
+// ===============================================================
+        function second() {
+          console.log("2");
+        }
+
+        let second = () => {
+            console.log( '2');
+        }
+    
+        function third(color) {
+          console.log("3 ", color);
+        }
+
+        let third = (color) => {
+            console.log ('3', color)
+        }
+    
+        first();
+        second();
+        third("orange");
+      </script>
+</body>
+</html>
