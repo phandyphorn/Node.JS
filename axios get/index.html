@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Axios 'GET'</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <script>
+        const URL = "https://api.genderize.io/?name=peter"
+        // Get data to see.
+        // Then use to show data to us.
+        // It is asyncronous type. because of  get and then. Then don't wait get.
+
+        // axios use to declare.
+        axios
+        // get url from server
+        .get(URL)
+        // if success return what i request
+        .then((result)=>{
+            console.log(result.data);
+        })
+        // if not success return error.
+        .catch((error)=> {
+            console.log (error)
+        }) 
+        
+    </script>
+</body>
+</html>
