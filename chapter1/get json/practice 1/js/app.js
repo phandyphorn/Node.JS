@@ -68,13 +68,12 @@ function afterStudentRequest(response) {
 
 // The URL of the data we want to get
 const STUDENT_URL = "data/students.json";
-
 // We use Axios library to do a HTTP request to the server
 // Request a GET on STUDENT_URL to get the data from the JSON
 // Once done the function 'afterStudentRequest' will be called
-
-
 // Ask ==================================================================
 // Axios is a promise based HTTP client for the browser and Node. js
-axios.get(STUDENT_URL).then(afterStudentRequest);
+axios
+.get(STUDENT_URL)
+.then(afterStudentRequest);
 

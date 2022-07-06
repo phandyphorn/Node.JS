@@ -30,9 +30,11 @@ app.listen(5500, (error) => {
 // * mean that all server can run on it.
 app.use(cors({origin: '*'}));
 app.use(express.static("public"));
+
 app.get('/users', (req, res) => {
     res.send(users);
 })
+
 
 let place = document.body;
 for (let i = 0; i<users.length; i++) {

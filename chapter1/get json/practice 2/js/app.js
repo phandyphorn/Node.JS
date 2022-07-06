@@ -12,13 +12,14 @@ function afterRequest(response) {
 
 let nameToTest = "2031";
 const GENDER_URL_BASE = "https://gorest.co.in/public/v2/todos?id=";
-
 // Plus GENER_URL_BASE with nameToTest
-const GENDER_URL = "https://gorest.co.in/public/v2/todos?id=" + nameToTest;	// TODO
+const GENDER_URL = GENDER_URL_BASE + nameToTest;	// TODO
 
 // let p = document.createElement(p);
 
 // Request a GET on GENDER_URL to get the data from the JSON
 // Once done the function afterRequest will be called
-axios.get(GENDER_URL).then(afterRequest);
+axios
+.get(GENDER_URL)
+.then(afterRequest);
 

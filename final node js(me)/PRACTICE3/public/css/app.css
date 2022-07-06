@@ -1,0 +1,36 @@
+body {
+    background: #eec;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.container {
+    width: 30%;
+    margin: auto;
+}
+button {
+    padding: 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 1px;
+    color: #fff;
+    opacity: 0.8;
+}
+#getName {
+    background: #059bf1e1;
+}
+#getBrand {
+    background: #000;
+}
+input {
+    padding: 10px;
+}
+::placeholder {
+    font-style: italic;
+}
+.result {
+    text-align: left;
+    margin-top: 10px;
+}

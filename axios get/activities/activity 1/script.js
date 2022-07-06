@@ -10,4 +10,6 @@ function afterSuccess(response) {
   let probablility = alldatas.probability;
   console.log(probablility)
 }
-axios.get("https://api.genderize.io?name=ronan").then(afterSuccess);
+axios
+.get("https://api.genderize.io?name=ronan")
+.then(afterSuccess);

@@ -51,4 +51,6 @@ const GENDER_URL_BASE = "https://jsonplaceholder.typicode.com/users";
 // Request a GET on this URL : https://jsonplaceholder.typicode.com/users
 // then : callback the function afterRequest
 
-axios.get(GENDER_URL_BASE).then(afterRequest);
+axios
+.get(GENDER_URL_BASE)
+.then(afterRequest);

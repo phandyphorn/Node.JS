@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+  
+}
+.card-container {
+    width: 43%;
+    border-radius: 7px;
+    margin: 0 auto;
+    padding: 10px;
+    color: #fff;
+    display: flex;
+}
+img {
+    border-radius: 6px;
+}
+.username {
+    text-align: center;
+}
+.card-content {
+    padding: 10px;
+    margin-left: 10px;
+}
+.circle {
+    display: flex;
+    justify-content: space-between;
+}
+.circle span{
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    padding: 2px;
+    border-radius:40px;
+}
+.card-id {
+    letter-spacing: 10px;
+}
+.phone {
+    letter-spacing: 6px;
+}
+.gender {
+    text-transform: capitalize;
+}
